@@ -1,0 +1,17 @@
+<div id="<%= dom_id upload %>">
+  <p>
+    <strong>File:</strong>
+    <%= link_to upload.file.filename, upload.file if upload.file.attached? %>
+  </p>
+
+  <p>
+    <strong>Summary:</strong>
+    <%= upload.summary %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= upload.status %>
+  </p>
+
+</div>
